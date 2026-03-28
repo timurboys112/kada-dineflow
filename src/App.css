@@ -1,0 +1,212 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f5f6fa;
+}
+
+/* LAYOUT */
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr 320px;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #111827;
+  color: white;
+  padding: 30px 20px;
+}
+
+.sidebar h2 {
+  margin: 0;
+}
+
+/* CONTENT */
+.content {
+  padding: 30px;
+  overflow: auto;
+}
+
+/* PRODUCT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+  gap: 20px;
+}
+
+/* PRODUCT CARD */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.price {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* BUTTON GLOBAL */
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #111827;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   FILTER TABS (UPGRADED)
+========================= */
+
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-tabs button {
+  padding: 10px 16px;
+  border: none;
+  background: #eee;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
+
+.filter-tabs button.active {
+  background: #111827;
+  color: white;
+}
+
+/* BADGE CATEGORY COUNT */
+.badge {
+  background: #111827;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+/* =========================
+   ORDER PANEL
+========================= */
+
+.order {
+  background: white;
+  padding: 25px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout {
+  margin-top: auto;
+  padding: 14px;
+  font-size: 16px;
+  background: #16a34a;
+}
+
+/* =========================
+   FLOATING MODAL (NEW)
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* modal lama diganti modal modern */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* animasi halus */
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* RECEIPT STYLE (REAL STRUK) */
+
+.receipt {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  color: #000;
+}
+
+.receipt-header {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.receipt-header p {
+  margin: 2px 0;
+}
+
+.receipt-divider {
+  border-top: 1px dashed #000;
+  margin: 10px 0;
+}
+
+.receipt-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.receipt-footer {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+}
