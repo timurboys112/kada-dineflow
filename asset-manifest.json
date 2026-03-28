@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kada-dineflow/static/css/main.bf18d12d.css",
+    "main.js": "/kada-dineflow/static/js/main.08f14f47.js",
+    "index.html": "/kada-dineflow/index.html",
+    "main.bf18d12d.css.map": "/kada-dineflow/static/css/main.bf18d12d.css.map",
+    "main.08f14f47.js.map": "/kada-dineflow/static/js/main.08f14f47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf18d12d.css",
+    "static/js/main.08f14f47.js"
+  ]
+}
